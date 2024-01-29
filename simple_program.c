@@ -10,7 +10,7 @@ int main(int argc, char **argv) {
 
     // h: Help
     // e [msg]: Echo message
-    while ((c = getopt(argc, argv, "hep:")) != -1) {
+    while ((c = getopt(argc, argv, "henp:")) != -1) {
         has_option = 1;
 
         switch (c) {
@@ -23,6 +23,9 @@ int main(int argc, char **argv) {
             case 'p':
 				printf("Pong!\n");
 				break;
+			case 'n':
+				printf("Hi: %s\n", optarg);
+				break;            
             case 'e':
                 echo_msg = optarg;
                 break;
