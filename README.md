@@ -1,1 +1,1 @@
-this is a simple program
+# A simple program
